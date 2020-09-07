@@ -1,6 +1,16 @@
 ---
 - hosts: all
   become: yes
+
+  vars:
+    docker_users:
+      - ubuntu
+    swap_file_path: /swap.img
+    swap_file_state: absent
+    kubernetes_role: master
+    kubernetes_allow_pods_on_master: true 
+    kubernetes_enable_web_ui: true
+
   roles:
     - geerlingguy.docker
     - geerlingguy.swap
