@@ -3,4 +3,5 @@
   become: yes
   roles:
     - geerlingguy.docker
+    - geerlingguy.swap
     - geerlingguy.kubernetes

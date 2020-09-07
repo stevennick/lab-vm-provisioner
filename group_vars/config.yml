@@ -6,6 +6,10 @@
 docker_users:
   - ubuntu
 
+# Disable swap file
+swap_file_path: /swap.img
+swap_file_state: absent
+
 # =======
 # Below options are copied from 'geerlingguy.kubernetes', see 'defaults/main.yml' for fully supportted variables.
 # =======
